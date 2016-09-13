@@ -8,9 +8,9 @@ Legacy Lua API
 
 Welcome to the Legacy Lua API's documentation!
 
-The **Legacy mod** is the default mod shipped with `ET: Legacy <http://www.etlegecy.com>`_. It supports server-side modifications via the `Lua <http://www.lua.org/>`_ scripting language.
+The **Legacy mod** is the default mod shipped with `ET: Legacy <http://www.etlegacy.com>`_. It supports server-side modifications via the `Lua <http://www.lua.org/>`_ scripting language.
 
-If present, the embedded Lua 5.3 interpreter will load user-defined scripts from the Legacy directory. It also provides an "et" library of function calls for Lua that allow access to the server engine, and provides callbacks so a server side mod may trigger on specific server events.
+If present, the embedded **Lua 5.3** interpreter will load user-defined scripts from the Legacy directory. It also provides an "et" library of function calls for Lua that allow access to the server engine, and provides callbacks so a server side mod may trigger on specific server events.
 
 For more information about Lua, check out the `Reference Manual <http://www.lua.org/manual/5.3/>`_, the online edition of the book `Programming in Lua <http://www.lua.org/pil/>`_ or the `Lua-users wiki <http://lua-users.org/wiki/>`_.
 
@@ -21,7 +21,7 @@ Contents
 --------
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
 
    intro
    cvars
@@ -31,12 +31,12 @@ Contents
    fields
    constants
    database
+   sample
 
 
 Indices and tables
 ------------------
 
 * :ref:`genindex`
-* :ref:`modindex`
 * :ref:`search`
 
