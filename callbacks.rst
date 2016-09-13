@@ -153,15 +153,6 @@ Miscellaneous
 =============
 
 
-et_IPCReceive( vmnumber, message )
-----------------------------------
-
-Called when another mod sends an et.IPCSend() message to this mod.
-
-* `vmnumber` is the VM slot number of the sender.
-* `message` is the message.
-
-
 et_Print( text )
 ----------------
 
