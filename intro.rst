@@ -6,7 +6,7 @@ Legacy's Lua API is the interface for communication between Lua and Legacy mod.
 
 The basic idea for this Lua API is event-management. After a certain event, the lua-interaction-code in Legacy executes a predefined function, with additional predefined arguments.
 
-For example, if a player dies the `et_Obituary( victim, killer, meansOfDeath ) <callbacks.html#et-obituary-victim-killer-meansofdeath>`__ function is executed. The Lua API allows you to manipulate and control this information.
+For example, if a player dies the `et_Obituary( victim, killer, meansOfDeath ) <callbacks.html#et-obituary-target-attacker-meansofdeath>`__ function is executed. The Lua API allows you to manipulate and control this information.
 
 In some cases you can also return a value to Legacy, whenever you intercepted something (i.e. a command), and prevent Legacy to handle it further.
 
