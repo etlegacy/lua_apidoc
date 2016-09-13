@@ -1,4 +1,4 @@
-# Legacy Lua API documentation
+# Legacy Lua API documentation [![Documentation Status](https://readthedocs.org/projects/legacy-lua-api/badge/?version=latest)](http://legacy-lua-api.readthedocs.io/en/latest/?badge=latest)
 
 Legacy's Lua API is the interface for communication between Lua and Legacy mod.
 
