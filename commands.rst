@@ -2,11 +2,12 @@
 Commands
 ========
 
-Here is a list of all the Lua commands of Legacy mod.
+Here are all available Lua commands.
 
 
 Server commands
 ===============
+
 
 lua_status
 -----------

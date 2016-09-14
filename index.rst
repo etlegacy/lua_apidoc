@@ -8,28 +8,40 @@ Legacy Lua API
 
 Welcome to the Legacy Lua API's documentation!
 
-The **Legacy mod** is the default mod shipped with `ET: Legacy <http://www.etlegacy.com>`_. It supports server-side modifications via the `Lua <http://www.lua.org/>`_ scripting language.
+The **Legacy mod** is the default mod shipped with `ET: Legacy <http://www.etlegacy.com>`_. It supports server-side modifications via the `Lua <http://www.lua.org/>`_ scripting language, with the Legacy Lua API being the interface for communication between them.
 
-If present, the embedded **Lua 5.3** interpreter will load user-defined scripts from the Legacy directory. It also provides an "et" library of function calls for Lua that allow access to the server engine, and provides callbacks so a server side mod may trigger on specific server events.
+The embedded **Lua 5.3** interpreter will load user-defined scripts if present in the `Legacy` directory. The Lua API provides an "et" library of `function calls <functions.html>`__ that allow access to the server engine, and also provides `callbacks <callbacks.html>`__ so a server side mod may trigger on specific server events.
 
-For more information about Lua, check out the `Reference Manual <http://www.lua.org/manual/5.3/>`_, the online edition of the book `Programming in Lua <http://www.lua.org/pil/>`_ or the `Lua-users wiki <http://lua-users.org/wiki/>`_.
+In some cases values can be returned to Legacy mod, whenever something is intercepted (i.e. a command) and prevented to be further handled. This way, new commands can easily be defined or existing ones can be altered.
+
+Through special functions, it is also possible to alter internal structures or entities (manipulate client XP, set and read cvars, remap shaders, etc.).
+For example, if a player dies the `et_Obituary( victim, killer, meansOfDeath ) <callbacks.html#et-obituary-target-attacker-meansofdeath>`__ function is executed, and the Lua API allows you to manipulate and control this information.
 
 If you want to see some ET-specific Lua examples, you can check the `ET Legacy Lua scripts <https://github.com/etlegacy/etlegacy-lua_scripts>`_ repository.
 
 
+Implementation
+==============
+
+Legacy's Lua API follows mostly the `ETPub <http://www.etpub.org/>`_ implementation with partial code of the `NoQuarter <http://shitstorm.org/noquarter/>`_ implemention. The ETPub implementation being built to be compatible with `ETPro's Lua <http://wolfwiki.anime.net/index.php/Lua_Mod_API>`_, all scripts written in ETPro's documentation should be valid and more or less compatible with Legacy mod's Lua API.
+
+.. important:: As Legacy uses the newer Lua 5.3, you might want to check the **Incompatibilities with the Previous Version** sections of the `Lua 5.1 <https://www.lua.org/manual/5.1/manual.html#7>`_, `Lua 5.2 <https://www.lua.org/manual/5.2/manual.html#8>`_, and `Lua 5.3 <https://www.lua.org/manual/5.3/manual.html#8>`_ manuals while porting scripts written for other mods.
+
+
 Contents
---------
+========
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
-   intro
+   standard
    cvars
    commands
    functions
    callbacks
    fields
    constants
+   misc
    database
    sample
 
@@ -38,5 +50,4 @@ Indices and tables
 ------------------
 
 * :ref:`genindex`
-* :ref:`search`
 

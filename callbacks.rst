@@ -2,7 +2,7 @@
 Callbacks
 =========
 
-Here is a list of all the Lua callbacks of Legacy mod.
+Here are all available Lua callbacks.
 
 
 qagame execution
@@ -56,7 +56,7 @@ Called when a client attempts to connect to the server.
 * `firstTime` indicates if this is a new connection (1) or a reconnection (0).
 * `isBot` indicates if the client is a bot (1) or not (0).
 
-If the mod accepts the connection, it should return `nil`. Otherwise, the mod should return a string describing the reason the client connection was rejected.
+If the mod accepts the connection, it returns `nil`. Otherwise, the mod should return a string describing the reason the client connection was rejected.
 
 
 et_ClientDisconnect( clientNum )
@@ -108,7 +108,7 @@ Called when a command is received from a client.
 * `clientNum` is the client slot id.
 * `command` is the command.
 
-The mod should return 1 if the command was intercepted by the mod, and 0 if the command was ignored by the mod and should be passed through to the server (and other mods in the chain).
+Returns 1 if the command was intercepted by the mod, and 0 if the command was ignored and passed through to the server (and other mods in the chain).
 
 .. tip:: The actual command can be accessed through the argument handling functions, as seen in the `Sample Code <sample.html>`__.
 
@@ -118,7 +118,7 @@ intercepted = et_ConsoleCommand()
 
 Called when a command is entered on the server console.
 
-The mod should return 1 if the command was intercepted by the mod, and 0 if the command was ignored by the mod and should be passed through to the server (and other mods in the chain).
+Returns 1 if the command was intercepted, and 0 if the command was ignored and passed through to the server (and other mods in the chain).
 
 .. tip:: The actual command can be accessed through the argument handling functions, as seen in the `Sample Code <sample.html>`__.
 
@@ -128,25 +128,25 @@ XP
 
 
 et_UpgradeSkill( clientNum, skill )
------------------------------
+-----------------------------------
 
 Called when a client gets a skill upgrade.
 
 * `clientNum` is the client slot.
 * `skill` is the skill number.
 
-Return -1 to override (abort) the qagame function, anything else to "passthrough". Callback may modify skills (or do anything else it wants) during passthrough.
+Returns -1 to override (abort) the qagame function, anything else to "passthrough". Callback may modify skills (or do anything else it wants) during passthrough.
 
 
 et_SetPlayerSkill( clientNum, skill )
--------------------------------
+-------------------------------------
 
 Called when a client skill is set.
 
 * `clientNum` is the client slot.
 * `skill` is the skill number.
 
-Return -1 to override (abort) the qagame function, anything else to "passthrough". Callback may modify skills (or do anything else it wants) during passthrough.
+Returns -1 to override (abort) the qagame function, anything else to "passthrough". Callback may modify skills (or do anything else it wants) during passthrough.
 
 
 Miscellaneous
@@ -159,13 +159,13 @@ et_Print( text )
 Called whenever the server or qagame prints a string to the console.
 
 
-.. warning:: Text may contain a player name and their chat message. This makes it very easy to spoof.
+.. warning:: **DO NOT TRUST STRINGS OBTAINED IN THIS WAY!**
 
-             DO NOT TRUST STRINGS OBTAINED IN THIS WAY!
+             Text may contain a player name and their chat message, which makes it very easy to spoof.
 
 
 et_Obituary( target, attacker, meansOfDeath )
--------------------------------------------
+---------------------------------------------
 
 Called whenever a player is killed.
 
@@ -174,16 +174,16 @@ Called whenever a player is killed.
 * `meansOfDeath` is the means of death.
 
 
-et_Damage( target, attaker, damage, damageFlags, meansOfDeath)
--------------------------------------------------------------
+et_Damage( target, attacker, damage, damageFlags, meansOfDeath)
+---------------------------------------------------------------
 
 Called whenever a player gets damage.
 
 * `target` is the victim.
 * `attacker` is the killer.
 * `damage` is the amount of damage.
-* `damageFlags` is the flag that controls how damage is inflicted.
-* `meansOfDeath` is the means of death.
+* `damageFlags` is the `flag <damages.html#damage-flags>`__ that controls how damage is inflicted.
+* `meansOfDeath` is the `means of death <damages.html#means-of-death>`__.
 
 
 et_SpawnEntitiesFromString()
