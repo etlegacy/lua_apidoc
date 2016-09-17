@@ -2,7 +2,7 @@
 Commands
 ========
 
-Here are all available Lua commands.
+**Commands** shows information about currently loaded scripts.
 
 
 Server commands

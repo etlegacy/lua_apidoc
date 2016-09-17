@@ -2,12 +2,239 @@
 Miscellaneous
 =============
 
-
-Damage flags
+Configstring
 ============
 
-`Damage flags` are bitflags that controls how damage is inflicted.
-The following bits are available.
+Configstrings are strings (often in the form of a set of `key\\value` pairs) set on the server and automatically sent to each client.
+They can be accessed with the `Configstring <functions.html#configstrings>`__ and `String utility <functions.html#string-utility>`__ functions.
+
+.. tip:: A group of related configstrings usually only have a symbolic name for the first value, with a number added to get a particular value. For example, to access a user `CS_PLAYERS` configstring you must use `et.trap_GetConfigstring(et.CS_PLAYERS + slotNumber)`.
+
+See `et.CS_* constants <constants.html#cs-constants>`__ for available configstrings.
+
+Here is the detailed content of the user **CS_PLAYERS** configstring:
+
+===  ===========================  ===================================================
+Key  Value                        Description
+===  ===========================  ===================================================
+n    pers.netname                 Nickname
+t    sess.sessionTeam             Team
+c    sess.playerType              Class
+lc   sess.latchPlayerType         Latched class
+r    sess.rank                    Rank
+m    medalStr                     Medals
+s    skillStr                     Skills
+dn   disguiseClientNum            Disguised covert ops
+w    sess.playerWeapon            Weapon
+lw   sess.latchPlayerWeapon       Latched primary weapon
+sw   sess.latchPlayerWeapon2      Latched secondary weapon
+mu   sess.muted                   Muted
+ref  sess.referee                 Referee
+sr   sess.mu - 3 * sess.sigma     Skill rating
+u    sess.uci                     GeoIP `ISO 3166-1 <https://en.wikipedia.org/wiki/ISO_3166-1>`_ country code
+===  ===========================  ===================================================
+
+
+Userinfo
+========
+
+
+Userinfo strings are strings set on clients for server processing.
+They can be accessed with the `Userinfo <functions.html#userinfo>`__ functions.
+
+
+=====================  ================================  ==================================================
+Key                    Example Value                     Description
+=====================  ================================  ==================================================
+cg_etVersion           Enemy Territory, ET 2.60b         Mod name, ET version
+cg_uinfo               12 0 100                          Client settings [cg_autoreload/cg_autoactivate/cg_predictitems] [cl_timenudge] [cl_maxpackets]
+g_password             none                              Server password
+cl_guid                0123456789ABCDEF0123456789ABCDEF  GUID
+cl_wwwDownload         1                                 Missing files downloading toggle
+name                   ETLPlayer                         Nickname
+rate                   2500                              Rate setting
+snaps                  20                                Snaps setting
+protocol               84                                Game protocol
+qport                  4834                              Randomly chosen as startup
+challenge              -686256943                        Random 31 bit integer
+ip                     192.168.123.45:27960              IP and port
+=====================  ================================  ==================================================
+
+.. note:: The userinfo string of bots only includes the `cl_guid`, `name`, `rate`, `snap` and `ip` keys/values.
+
+
+SendServerCommand
+=================
+
+`et.trap_SendServerCommand() <functions.html#et-trap-sendservercommand-clientnum-command>`__ is used to send a command from the server to one or more clients.
+
+The first argument is the slot number of the client the command is sent to. If it's equal to **-1**, the command is broadcast to all clients.
+
+The following commands can be issued:
+
+
+Printing
+--------
+
+
+Print a message to the client's console::
+
+    "print \"Message\n\""
+
+Print a message to the client's annoucement area and console::
+
+    "cpm \"Message\n\""
+
+Print a message to the center of the client's screen::
+
+    "cp \"Message\n\""
+
+Print a message to the client's console and writes it to the statsdump file::
+
+    "sc \"Message\n\""
+
+
+Chatting
+--------
+
+Print a message as a global chat message on behalf of the specified client::
+
+    "chat ClientNum \"Message\""
+
+Print a message as a team chat message on behalf of the specified client::
+
+    "tchat ClientNum \"Message\" X-Location Y-Location Z-Location"
+
+* The **X,Y,Z-Location**'s are optional parameters that represent the client's location.
+
+.. Print a message as a fireteam chat message on behalf of the specified client:
+..
+..    "bchat ClientNum \"Message\" X-Location Y-Location Z-Location"
+..
+.. * The X,Y,Z-Location's are optional parameters that represent the client's location.
+
+Print a message as a global chat message via rcon (qsay command)::
+
+    "chat \"Message\""
+
+
+Voice Chat
+----------
+
+
+Send a global voice chat on behalf of the specified client::
+
+    "vchat VoiceOnly ClientNum 50 Vsay-String Vsay-Number \"Custom-Message\"".
+
+* **VoiceOnly** prints a global chat message on behalf of ClientNum if set to **0**, or only play the sound if set to **1**.
+* **Vsay-String** is the global voice chat message.
+* **Vsay-Number** is the vsay number of Vsay as listed in the .voice files. It is by default random, but can be set by the player by passing parameters to the vsay command (`/vsay <Vsay-Number> <Vsay-String>`).
+* **Custom-Message** is by default empty (\"\"). If set, it prints the message in the chat area.
+
+Send a team voice chat on behalf of the specified client::
+
+    "vtchat VoiceOnly ClientNum 50 Vsay-String X-Location Y-Location Z-Location Vsay-Number \"Custom-Message\""
+
+* **VoiceOnly** prints a team chat message on behalf of ClientNum if set to **0**, or only play the sound if set to **1**.
+* **Vsay-String** is the team voice chat message.
+* **Vsay-Number** is the vsay number of Vsay as listed in the .voice files. It is by default random, but can be set by the player by passing parameters to the vsay command (`/vsay <Vsay-Number> <Vsay-String>`).
+* The **X,Y,Z-Location**'s are optional parameters that represent the client's location.
+* **Custom-Message** is by default empty (\"\"). If set, it prints the message in the chat area.
+
+Send a fireteam voice chat on behalf of the specified client::
+
+    "vtchat VoiceOnly ClientNum 50 Fireteam-String X-Location Y-Location Z-Location Vsay-Number \"Custom-Message\""
+
+* **VoiceOnly** prints a fireteam chat message on behalf of ClientNum if set to **0**, or only play the sound if set to **1**.
+* **Fireteam-String** is the fireteam voice chat message.
+* **Vsay-Number** is the vsay number of Vsay as listed in the .voice files. It is by default random, but can be set by the player by passing parameters to the vsay command (`/vsay <Vsay-Number> <Vsay-String>`).
+* The **X,Y,Z-Location**'s are optional parameters that represent the client's location.
+* **Custom-Message** is by default empty (\"\"). If set, it prints the message in the chat area.m contaning the message
+if VoiceOnly is 1 it will only do the sound but not the message
+
+
+Fireteam
+--------
+
+
+Show a fireteam invation message to the client::
+
+    "application Number"
+
+* if **Number** is **> -1**, the "Accept ...'s application to join your fireteam?" message is displayed. In this case, **Number** is the ClientNum of the applying client.
+* if **Number** is **-1**, the "Your application has been submitted" message is displayed.
+* if **Number** is **-2**, the "Your application failed" message is displayed.
+* if **Number** is **-3**, the "Your application has been approved" message is displayed.
+* if **Number** is **-4**, the "Your application reply has been sent" message is displayed.
+
+Show a fireteam proposition message to the client::
+
+    "proposition Number Number2"
+
+* if **Number** is **> -1**, the "Accept ...'s proposition to invite ... to your fireteam?" message is displayed. In this case, **Number** is the ClientNum of the proposed client, and **Number2** is the ClientNum of the proposing player.
+* if **Number** is **-1**, the "Your proposition has been submitted" message is displayed.
+* if **Number** is **-2**, the "Your proposition was rejected" message is displayed.
+* if **Number** is **-3**, the "Your proposition was accepted" message is displayed.
+* if **Number** is **-4**, the "Your proposition reply has been sent" message is displayed.
+* **Number2** is an optional parameter only used when **Number** > **-1**.
+
+Show a fireteam invitation message to the client::
+
+    "invitation Number"
+
+* if **Number** is **> -1**, the "Accept ..'s invitation to join your fireteam?" message is displayed. In this case, **Number** is the ClientNum of the applying client.
+* if **Number** is **-1**, the "Your invitation has been submitted" message is displayed.
+* if **Number** is **-2**, the "Your invitation rejected" message is displayed.
+* if **Number** is **-3**, the "Your invitation was accepted" message is displayed.
+* if **Number** is **-4**, the "Your invitation reply has been sent" message is displayed.
+
+
+Others
+------
+
+
+Show the complaint vote message to the client::
+
+    "complaint Number"
+
+* if **Number** is **> 1**, the "File complaint against ... for team-killing?" message is displayed. In this case, **Number** is the ClientNum of the teamkilling player.
+* if **Number** is **-1**, the "Complaint filed" message is displayed.
+* if **Number** is **-2**, the "Complaint dismissed" message is displayed.
+
+
+Set the client game selected spawnpoint::
+
+   "setspawnpt Number"
+
+* **Number** is the selected spawnpoint.
+
+Disconnect the client with a "Server disconnected" message::
+
+    "disconnect \"reason\""
+
+* **reason** is an optional parameter to show a reason after "Server disconnected".
+
+.. note:: Use `et.trap_DropClient() <functions.html#et-trap-dropclient-clientnum-reason-bantime>`__ instead.
+
+Set a client's configstring to a string::
+
+    "cs Number \"String\""
+
+* **String** is the new configstring string.
+
+.. note:: Use `et.trap_SetUserinfo() <functions.html#et-trap-setuserinfo-clientnum-userinfo>`__ instead.
+
+Replace any texture::
+
+    "remapShader \"OldShader\" \"NewShader\" #"
+
+* **OldShader** is the old shader.
+* **NewShader** is the new shader.
+* **#** is the Timeoffset, which currently should be left as 0.
+
+
+Damage bitflags
+===============
 
 
 =============================  ==================  ==================================

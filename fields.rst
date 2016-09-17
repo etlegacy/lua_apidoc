@@ -2,7 +2,7 @@
 Fields
 ======
 
-Here are all available Lua fields supported by `et.gentity_get() <functions.html#variable-et-gentity-get-entnum-fieldname-arrayindex>`__ and `et.gentity_set() <functions.html#et-gentity-set-entnum-fieldname-arrayindex-value>`__ functions.
+**Fields** are entity parameters supported by `et.gentity_get() <functions.html#variable-et-gentity-get-entnum-fieldname-arrayindex>`__ and `et.gentity_set() <functions.html#et-gentity-set-entnum-fieldname-arrayindex-value>`__ functions.
 
 
 Player fields
@@ -12,121 +12,121 @@ Player fields
 =================================  ===========  ========  ==================================
 Name                               Type         Flag      Description
 =================================  ===========  ========  ==================================
-noclip                             INT          RO
-lastKillTime                       INT          RO
-saved_persistant                   INT_ARRAY    RO
-lastConstructibleBlockingWarnTime  INT          RO
-landmineSpottedTime                INT          RO
-lasthurt_client                    INT          RO
-lasthurt_mod                       INT          RO
-lasthurt_time                      INT          RO
-respawnTime                        INT          RO
-inactivityTime                     INT          RW
-inactivityWarning                  INT          RW
-PCSpecialPickedUpCount             INT          RO
-combatState                        INT          RO
-deathAnimTime                      INT          RO
-deathTime                          INT          RO
-disguiseClientNum                  INT          RO
-medals                             INT          RO
-acc                                FLOAT        RO
-hspct                              FLOAT        RO
-freezed                            INT          RW
-constructSoundTime                 INT          RO
+noclip                             int          ro
+lastKillTime                       int          ro
+saved_persistant                   int_array    ro
+lastConstructibleBlockingWarnTime  int          ro
+landmineSpottedTime                int          ro
+lasthurt_client                    int          ro
+lasthurt_mod                       int          ro
+lasthurt_time                      int          ro
+respawnTime                        int          ro
+inactivityTime                     int          rw
+inactivityWarning                  int          rw
+PCSpecialPickedUpCount             int          ro
+combatState                        int          ro
+deathAnimTime                      int          ro
+deathTime                          int          ro
+disguiseClientNum                  int          ro
+medals                             int          ro
+acc                                float        ro
+hspct                              float        ro
+freezed                            int          rw
+constructSoundTime                 int          ro
 
-pers.connected                     INT          RO
-pers.netname                       STRING       NOPTR
-pers.localClient                   INT          RW
-pers.initialSpawn                  INT          RW
-pers.enterTime                     INT          RW
-pers.connectTime                   INT          RO
-pers.teamState.state               INT          RW
-pers.voteCount                     INT          RW
-pers.complaints                    INT          RW
-pers.complaintClient               INT          RW
-pers.complaintEndTime              INT          RW
-pers.lastReinforceTime             INT          RW
-pers.applicationClient             INT          RW
-pers.applicationEndTime            INT          RW
-pers.invitationClient              INT          RW
-pers.invitationEndTime             INT          RW
-pers.propositionClient             INT          RW
-pers.propositionClient2            INT          RW
-pers.propositionEndTime            INT          RW
-pers.autofireteamEndTime           INT          RW
-pers.autofireteamCreateEndTime     INT          RW
-pers.autofireteamJoinEndTime       INT          RW
-pers.lastSpawnTime                 INT          RO
-pers.ready                         INT          RW
-pers.lastkilled_client             INT          RO
-pers.lastrevive_client             INT          RO
-pers.lastkiller_client             INT          RO
-pers.lastammo_client               INT          RO
-pers.lasthealth_client             INT          RO
-pers.lastteambleed_client          INT          RO
-pers.lastteambleed_dmg             INT          RO
-pers.playerStats.hitRegions        INT_ARRAY    RO
-pers.lastBattleSenseBonusTime      INT          RO
-pers.lastHQMineReportTime          INT          RO
-pers.maxHealth                     INT          RO
-pers.playerStats.selfkills         INT          RO
+pers.connected                     int          ro
+pers.netname                       string       noptr
+pers.localClient                   int          rw
+pers.initialSpawn                  int          rw
+pers.enterTime                     int          rw
+pers.connectTime                   int          ro
+pers.teamState.state               int          rw
+pers.voteCount                     int          rw
+pers.complaints                    int          rw
+pers.complaintClient               int          rw
+pers.complaintEndTime              int          rw
+pers.lastReinforceTime             int          rw
+pers.applicationClient             int          rw
+pers.applicationEndTime            int          rw
+pers.invitationClient              int          rw
+pers.invitationEndTime             int          rw
+pers.propositionClient             int          rw
+pers.propositionClient2            int          rw
+pers.propositionEndTime            int          rw
+pers.autofireteamEndTime           int          rw
+pers.autofireteamCreateEndTime     int          rw
+pers.autofireteamJoinEndTime       int          rw
+pers.lastSpawnTime                 int          ro
+pers.ready                         int          rw
+pers.lastkilled_client             int          ro
+pers.lastrevive_client             int          ro
+pers.lastkiller_client             int          ro
+pers.lastammo_client               int          ro
+pers.lasthealth_client             int          ro
+pers.lastteambleed_client          int          ro
+pers.lastteambleed_dmg             int          ro
+pers.playerStats.hitRegions        int_array    ro
+pers.lastBattleSenseBonusTime      int          ro
+pers.lastHQMineReportTime          int          ro
+pers.maxHealth                     int          ro
+pers.playerStats.selfkills         int          ro
 
-ps.pm_flags                        INT          RO
-ps.pm_time                         INT          RO
-ps.eFlags                          INT          RO
-ps.weapon                          INT          RO
-ps.weaponstate                     INT          RO
-ps.stats                           INT_ARRAY    RW
-ps.persistant                      INT_ARRAY    RW
-ps.ping                            INT          RO
-ps.powerups                        INT_ARRAY    RW
-ps.origin                          VEC3         RW
-ps.ammo                            INT_ARRAY    RW
-ps.ammoclip                        INT_ARRAY    RW
-ps.classWeaponTime                 INT          RW
+ps.pm_flags                        int          ro
+ps.pm_time                         int          ro
+ps.eFlags                          int          ro
+ps.weapon                          int          ro
+ps.weaponstate                     int          ro
+ps.stats                           int_array    rw
+ps.persistant                      int_array    rw
+ps.ping                            int          ro
+ps.powerups                        int_array    rw
+ps.origin                          vec3         rw
+ps.ammo                            int_array    rw
+ps.ammoclip                        int_array    rw
+ps.classWeaponTime                 int          rw
 
-sess.sessionTeam                   INT          RW
-sess.spectatorTime                 INT          RW
-sess.spectatorState                INT          RW
-sess.spectatorClient               INT          RW
-sess.playerType                    INT          RW
-sess.playerWeapon                  INT          RW
-sess.playerWeapon2                 INT          RW
-sess.spawnObjectiveIndex           INT          RW
-sess.latchPlayerType               INT          RW
-sess.latchPlayerWeapon             INT          RW
-sess.latchPlayerWeapon2            INT          RW
-sess.ignoreClients                 INT_ARRAY    RW
-sess.muted                         INT          RW
-sess.skillpoints                   FLOAT_ARRAY  RO
-sess.startskillpoints              FLOAT_ARRAY  RO
-sess.startxptotal                  FLOAT        RO
-sess.skill                         INT_ARRAY    RW
-sess.rank                          INT          RW
-sess.medals                        INT_ARRAY    RW
-sess.referee                       INT          RW
-sess.rounds                        INT          RW
-sess.spec_invite                   INT          RW
-sess.spec_team                     INT          RW
-sess.kills                         INT          RW
-sess.deaths                        INT          RW
-sess.gibs                          INT          RW
-sess.self_kills                    INT          RW
-sess.team_kills                    INT          RW
-sess.team_gibs                     INT          RW
-sess.damage_given                  INT          RW
-sess.damage_received               INT          RW
-sess.team_damage_given             INT          RW
-sess.team_damage_received          INT          RW
-sess.time_axis                     INT          RW
-sess.time_allies                   INT          RW
-sess.time_played                   INT          RW
-sess.mu                            FLOAT        RW
-sess.sigma                         FLOAT        RW
-sess.oldmu                         FLOAT        RW
-sess.oldsigma                      FLOAT        RW
-sess.uci                           INT          RW
-sess.aWeaponStats                  WEAPONSTAT   RW
+sess.sessionTeam                   int          rw
+sess.spectatorTime                 int          rw
+sess.spectatorState                int          rw
+sess.spectatorClient               int          rw
+sess.playerType                    int          rw
+sess.playerWeapon                  int          rw
+sess.playerWeapon2                 int          rw
+sess.spawnObjectiveIndex           int          rw
+sess.latchPlayerType               int          rw
+sess.latchPlayerWeapon             int          rw
+sess.latchPlayerWeapon2            int          rw
+sess.ignoreClients                 int_array    rw
+sess.muted                         int          rw
+sess.skillpoints                   float_array  ro
+sess.startskillpoints              float_array  ro
+sess.startxptotal                  float        ro
+sess.skill                         int_array    rw
+sess.rank                          int          rw
+sess.medals                        int_array    rw
+sess.referee                       int          rw
+sess.rounds                        int          rw
+sess.spec_invite                   int          rw
+sess.spec_team                     int          rw
+sess.kills                         int          rw
+sess.deaths                        int          rw
+sess.gibs                          int          rw
+sess.self_kills                    int          rw
+sess.team_kills                    int          rw
+sess.team_gibs                     int          rw
+sess.damage_given                  int          rw
+sess.damage_received               int          rw
+sess.team_damage_given             int          rw
+sess.team_damage_received          int          rw
+sess.time_axis                     int          rw
+sess.time_allies                   int          rw
+sess.time_played                   int          rw
+sess.mu                            float        rw
+sess.sigma                         float        rw
+sess.oldmu                         float        rw
+sess.oldsigma                      float        rw
+sess.uci                           int          rw
+sess.aWeaponStats                  weaponstat   rw
 =================================  ===========  ========  ==================================
 
 .. note:: All the session `sess.*` fields will return `nil` unless the entity is associated with a client slot.
@@ -141,110 +141,208 @@ Entity fields
 =================================  ===========  ========  ==================================
 Name                               Type         Flag      Description
 =================================  ===========  ========  ==================================
-activator                          ENTITY       RO
-chain                              ENTITY       RW
-classname                          STRING       RW
-clipmask                           INT          RW
-closespeed                         FLOAT        RW
-count                              INT          RW
-count2                             INT          RW
-damage                             INT          RW
-deathType                          INT          RW
-delay                              FLOAT        RW
-dl_atten                           INT          RW
-dl_color                           VEC3         RW
-dl_shader                          STRING       RO
-dl_stylestring                     STRING       RO
-duration                           FLOAT        RW
-end_size                           INT          RW
-enemy                              ENTITY       RW
-entstate                           INT          RO
-flags                              INT          RO
-harc                               FLOAT        RW
-health                             INT          RW
-inuse                              INT          RW
-isProp                             INT          RO
-item                               STRING       RO
-key                                INT          RW
-message                            STRING       RW
-methodOfDeath                      INT          RW
-mg42BaseEnt                        INT          RW
-missionLevel                       INT          RW
-model                              STRING       RO
-model2                             STRING       RO
-nextTrain                          ENTITY       RW
-noise_index                        INT          RW
-prevTrain                          ENTITY       RW
-props_frame_state                  INT          RO
-r.absmax                           VEC3         RO
-r.absmin                           VEC3         RO
-r.bmodel                           INT          RO
-r.contents                         INT          RW
-r.currentAngles                    VEC3         RW
-r.currentOrigin                    VEC3         RW
-r.eventTime                        INT          RW
-r.linked                           INT          RO
-r.maxs                             VEC3         RW
-r.mins                             VEC3         RW
-r.ownerNum                         INT          RW
-r.singleClient                     INT          RW
-r.svFlags                          INT          RW
-r.worldflags                       INT          RO
-radius                             INT          RW
-random                             FLOAT        RW
-rotate                             VEC3         RW
-s.angles                           VEC3         RW
-s.angles2                          VEC3         RW
-s.apos                             TRAJECTORY   RW
-s.clientNum                        INT          RW
-s.constantLight                    INT          RW
-s.density                          INT          RW
-s.dl_intensity                     INT          RW
-s.dmgFlags                         INT          RW
-s.eFlags                           INT          RW
-s.eType                            INT          RW
-s.effect1Time                      INT          RW
-s.effect2Time                      INT          RW
-s.effect3Time                      INT          RW
-s.frame                            INT          RW
-s.groundEntityNum                  INT          RO
-s.loopSound                        INT          RW
-s.modelindex                       INT          RW
-s.modelindex2                      INT          RW
-s.number                           INT          RO
-s.onFireEnd                        INT          RW
-s.onFireStart                      INT          RW
-s.origin                           VEC3         RW
-s.origin2                          VEC3         RW
-s.pos                              TRAJECTORY   RW
-s.powerups                         INT          RO
-s.solid                            INT          RW
-s.teamNum                          INT          RW
-s.time                             INT          RW
-s.time2                            INT          RW
-s.weapon                           INT          RO
-s.eventParm                        INT          RW
-scriptName                         STRING       RO
-spawnflags                         INT          RO
-spawnitem                          STRING       RO
-speed                              INT          RW
-splashDamage                       INT          RW
-splashMethodOfDeath                INT          RW
-splashRadius                       INT          RW
-start_size                         INT          RW
-tagName                            STRING       NOPTR+RO
-tagParent                          ENTITY       RW
-takedamage                         INT          RW
-tankLink                           ENTITY       RW
-target                             STRING       RW
-TargetAngles                       VEC3         RW
-TargetFlag                         INT          RO
-targetname                         STRING       RO
-teamchain                          ENTITY       RW
-teammaster                         ENTITY       RW
-track                              STRING       RO
-varc                               FLOAT        RW
-wait                               FLOAT        RW
-waterlevel                         INT          RO
-watertype                          INT          RO
+activator                          entity       ro
+chain                              entity       rw
+classname                          string       rw
+clipmask                           int          rw
+closespeed                         float        rw
+count                              int          rw
+count2                             int          rw
+damage                             int          rw
+deathType                          int          rw
+delay                              float        rw
+dl_atten                           int          rw
+dl_color                           vec3         rw
+dl_shader                          string       ro
+dl_stylestring                     string       ro
+duration                           float        rw
+end_size                           int          rw
+enemy                              entity       rw
+entstate                           int          ro
+flags                              int          ro
+harc                               float        rw
+health                             int          rw
+inuse                              int          rw
+isProp                             int          ro
+item                               string       ro
+key                                int          rw
+message                            string       rw
+methodOfDeath                      int          rw
+mg42BaseEnt                        int          rw
+missionLevel                       int          rw
+model                              string       ro
+model2                             string       ro
+nextTrain                          entity       rw
+noise_index                        int          rw
+prevTrain                          entity       rw
+props_frame_state                  int          ro
+r.absmax                           vec3         ro
+r.absmin                           vec3         ro
+r.bmodel                           int          ro
+r.contents                         int          rw
+r.currentAngles                    vec3         rw
+r.currentOrigin                    vec3         rw
+r.eventTime                        int          rw
+r.linked                           int          ro
+r.maxs                             vec3         rw
+r.mins                             vec3         rw
+r.ownerNum                         int          rw
+r.singleClient                     int          rw
+r.svFlags                          int          rw
+r.worldflags                       int          ro
+radius                             int          rw
+random                             float        rw
+rotate                             vec3         rw
+s.angles                           vec3         rw
+s.angles2                          vec3         rw
+s.apos                             trajectory   rw
+s.clientNum                        int          rw
+s.constantLight                    int          rw
+s.density                          int          rw
+s.dl_intensity                     int          rw
+s.dmgFlags                         int          rw
+s.eFlags                           int          rw
+s.eType                            int          rw
+s.effect1Time                      int          rw
+s.effect2Time                      int          rw
+s.effect3Time                      int          rw
+s.frame                            int          rw
+s.groundEntityNum                  int          ro
+s.loopSound                        int          rw
+s.modelindex                       int          rw
+s.modelindex2                      int          rw
+s.number                           int          ro
+s.onFireEnd                        int          rw
+s.onFireStart                      int          rw
+s.origin                           vec3         rw
+s.origin2                          vec3         rw
+s.pos                              trajectory   rw
+s.powerups                         int          ro
+s.solid                            int          rw
+s.teamNum                          int          rw
+s.time                             int          rw
+s.time2                            int          rw
+s.weapon                           int          ro
+s.eventParm                        int          rw
+scriptName                         string       ro
+spawnflags                         int          ro
+spawnitem                          string       ro
+speed                              int          rw
+splashDamage                       int          rw
+splashMethodOfDeath                int          rw
+splashRadius                       int          rw
+start_size                         int          rw
+tagName                            string       noptr+ro
+tagParent                          entity       rw
+takedamage                         int          rw
+tankLink                           entity       rw
+target                             string       rw
+TargetAngles                       vec3         rw
+TargetFlag                         int          ro
+targetname                         string       ro
+teamchain                          entity       rw
+teammaster                         entity       rw
+track                              string       ro
+varc                               float        rw
+wait                               float        rw
+waterlevel                         int          ro
+watertype                          int          ro
 =================================  ===========  ========  ==================================
+
+
+Field types
+===========
+
+
+int
+---
+
+An integer value.
+
+
+float
+-----
+
+A float value.
+
+
+string
+------
+
+A string.
+
+
+array
+-----
+
+An array is a list of integer or float values. Individual elements of the array are accessed by passing the desired index in the `arrayindex` argument.
+Valid array indexes are integers from 0 up to some field specific maximum.
+
+.. note:: The `arrayindex` argument is required when accessing array type fields, so only one element of an array can be accessed in a given call to the `et.gentity_get() <functions.html#variable-et-gentity-get-entnum-fieldname-arrayindex>`__ and `et.gentity_set() <functions.html#et-gentity-set-entnum-fieldname-arrayindex-value>`__ functions.
+
+
+vec3
+----
+
+A vec3_t is a 3-element array of numbers, usually used to store and process coordinates in 3D space.
+Similarly, in Legacy a vector is an array (table indexed by integers) containing 3 numbers. It can be accessed by::
+
+    origin = et.gentity_get(entNum, "r.currentOrigin") --a vec3 value
+    x, y, z = origin[1], origin[2], origin[3]
+
+
+
+trajectory
+----------
+
+A trajectory is returned as a lua table as described below::
+
+    {
+      trDuration = <number>, --- int
+      trTime = <number>, -- int
+      trType = <number>, -- see below for allowed values
+      trBase = <vec3_t>, -- vec3, as described above
+      trDelta = <vec3_t> -- also a vec3
+    }
+
+
+The allowed values for `trType` are as follows:
+
+=================================  =========================================================
+Name                               Description
+=================================  =========================================================
+TR_STATIONARY
+TR_INTERPOLATE                     non-parametric, but interpolate between snapshots
+TR_LINEAR
+TR_LINEAR_STOP
+TR_LINEAR_STOP_BACK                so reverse movement can be different than forward
+TR_SINE                            value = base + sin( time / duration ) * delta
+TR_GRAVITY
+TR_GRAVITY_LOW
+TR_GRAVITY_FLOAT                   super low grav with no gravity acceleration (floating feathers/fabric/leaves/...)
+TR_GRAVITY_PAUSED                  has stopped, but will still do a short trace to see if it should be switched back to TR_GRAVITY
+TR_ACCELERATE
+TR_DECCELERATE
+TR_SPLINE
+TR_LINEAR_PATH
+=================================  =========================================================
+
+.. note:: Not all values make sense for all entity types.
+
+
+entity
+------
+
+Entity numbers are integers from 0 through 1023.
+Some of the entity numbers have special meanings:
+
+===========================  ===============================================================
+Value                        Description
+===========================  ===============================================================
+0 - (sv_privateclients - 1)  Reserved for clients who connect with the private slot password
+0 - 63                       Reserved for clients and also the client number
+1022                         Worldspawn entity
+1023                         ENTITYNUM_NONE which is used to indicate no entity when an entity number will be passed over the network
+===========================  ===============================================================
+
+.. note:: Some other fields not listed as type `entity` may take an entity number value. Examples are `mg42BaseEnt` and `s.number`.

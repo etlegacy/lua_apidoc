@@ -2,7 +2,7 @@
 Standard libraries
 ==================
 
-The following standard Lua libraries are initialized by default and available to Legacy Lua scripts:
+The following **standard Lua libraries** are initialized by default and are available to scripts:
 
 * `basic <http://www.lua.org/manual/5.3/manual.html#6.1>`_
 * `string <http://www.lua.org/manual/5.3/manual.html#6.4>`_

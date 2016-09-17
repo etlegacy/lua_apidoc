@@ -2,7 +2,7 @@
 Constants
 =========
 
-Here is a list of all the Lua constants.
+**Constants** are strings set on the server.
 
 
 CS constants

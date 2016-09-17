@@ -17,7 +17,7 @@ In some cases values can be returned to Legacy mod, whenever something is interc
 Through special functions, it is also possible to alter internal structures or entities (manipulate client XP, set and read cvars, remap shaders, etc.).
 For example, if a player dies the `et_Obituary( victim, killer, meansOfDeath ) <callbacks.html#et-obituary-target-attacker-meansofdeath>`__ function is executed, and the Lua API allows you to manipulate and control this information.
 
-If you want to see some ET-specific Lua examples, you can check the `ET Legacy Lua scripts <https://github.com/etlegacy/etlegacy-lua_scripts>`_ repository.
+.. note:: Like qagame, Lua modules are unloaded and reloaded on `map_restart` and map changes, which means that all global variables and other information is lost. Persistent data can be stored in `cvars <functions.html#cvars>`__, external `files <functions.html#filesystem>`__ or `database <database.html>`__.
 
 
 Implementation
@@ -44,10 +44,3 @@ Contents
    misc
    database
    sample
-
-
-Indices and tables
-------------------
-
-* :ref:`genindex`
-
