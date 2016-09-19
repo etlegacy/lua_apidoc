@@ -30,7 +30,6 @@ lw   sess.latchPlayerWeapon       Latched primary weapon
 sw   sess.latchPlayerWeapon2      Latched secondary weapon
 mu   sess.muted                   Muted
 ref  sess.referee                 Referee
-sr   sess.mu - 3 * sess.sigma     Skill rating
 u    sess.uci                     GeoIP `ISO 3166-1 <https://en.wikipedia.org/wiki/ISO_3166-1>`_ country code
 ===  ===========================  ===================================================
 
