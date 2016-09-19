@@ -156,7 +156,7 @@ Fireteam
 --------
 
 
-Show a fireteam invation message to the client::
+Show a fireteam invitation message to the client::
 
     "application Number"
 
