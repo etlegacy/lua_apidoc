@@ -476,15 +476,15 @@ Removes points to the client's skill.
 * **points** is the amount of points to remove.
 
 
-et.G_XP_Set ( clientNum , xp, skill, points )
----------------------------------------------
+et.G_XP_Set ( clientNum , xp, skill, add )
+------------------------------------------
 
 Sets XP of the client.
 
 * **clientNum** is the slot number of the client.
-* **xp** is the cumulative number of XP points.
+* **xp** is the number of XP points.
 * **skill** identifies the skill that the points are added to. See `Skill types <misc.html#skill-types>`__ for possible values.
-* **points** is the amount of points to add.
+* **add** sets the XP points if 0, or adds to the existing XP points if 1.
 
 
 et.G_ResetXP ( clientNum )
