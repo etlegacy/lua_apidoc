@@ -10,7 +10,7 @@ Welcome to the Legacy Lua API's documentation!
 
 The **Legacy mod** is the default mod shipped with `ET: Legacy <http://www.etlegacy.com>`_. It supports server-side modifications via the `Lua <http://www.lua.org/>`_ scripting language, with the Legacy Lua API being the interface for communication between them.
 
-The embedded **Lua 5.3** interpreter will load user-defined scripts if present in the `Legacy` directory. The Lua API provides an "et" library of `function calls <functions.html>`__ that allow access to the server engine, and also provides `callbacks <callbacks.html>`__ so a server side mod may trigger on specific server events.
+The embedded **Lua 5.3** interpreter will load user-defined scripts if present in the `legacy` directory. The Lua API provides an "et" library of `function calls <functions.html>`__ that allow access to the server engine, and also provides `callbacks <callbacks.html>`__ so a server side mod may trigger on specific server events.
 
 In some cases values can be returned to Legacy mod, whenever something is intercepted (i.e. a command) and prevented to be further handled. This way, new commands can easily be defined or existing ones can be altered.
 
