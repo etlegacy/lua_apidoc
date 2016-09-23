@@ -148,7 +148,7 @@ Send a fireteam voice chat on behalf of the specified client::
 * **Fireteam-String** is the fireteam voice chat message.
 * **Vsay-Number** is the vsay number of Vsay as listed in the .voice files. It is by default random, but can be set by the player by passing parameters to the vsay command (`/vsay <Vsay-Number> <Vsay-String>`).
 * The **X,Y,Z-Location**'s are optional parameters that represent the client's location.
-* **Custom-Message** is by default empty (\"\"). If set, it prints the message in the chat area.m contaning the message
+* **Custom-Message** is by default empty (\"\"). If set, it prints the message in the chat area.
 
 
 Fireteam
