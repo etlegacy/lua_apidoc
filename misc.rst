@@ -230,6 +230,8 @@ Replace any texture::
 * **NewShader** is the new shader.
 * **#** is the Timeoffset, which currently should be left as 0.
 
+.. note:: Use `et.G_ShaderRemap() <functions.html#et-g-shaderremap-oldshader-newshader>`__ instead.
+
 
 Damage bitflags
 ===============

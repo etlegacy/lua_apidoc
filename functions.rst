@@ -506,6 +506,8 @@ Adds a weapon to a client.
 * **ammoclip** is the number of ammo clip to add.
 * **setcurrent** sets the weapon as current weapon if 1, or does not select it if 0.
 
+.. note:: Adding a weapon does not automatically add its associated alternate weapon.
+
 
 et.RemoveWeaponFromPlayer( clientNum, weapon )
 ----------------------------------------------
@@ -514,6 +516,8 @@ Removes a weapon from a client.
 
 * **clientNum** is the slot number of the client.
 * **weapon** is the weapon to add. See `et.WP_* constants <constants.html#wp-constants>`__ for possible values.
+
+.. note:: Removing a weapon also removes its associated alternate weapon.
 
 
 Entities
