@@ -45,7 +45,6 @@ They can be accessed with the `Userinfo <functions.html#userinfo>`__ functions.
 =====================  ================================  ==================================================
 Key                    Example Value                     Description
 =====================  ================================  ==================================================
-cg_etVersion           Enemy Territory, ET 2.60b         Mod name, ET version
 cg_uinfo               12 0 100                          Client settings [cg_autoreload/cg_autoactivate/cg_predictitems] [cl_timenudge] [cl_maxpackets]
 g_password             none                              Server password
 cl_guid                0123456789ABCDEF0123456789ABCDEF  GUID
