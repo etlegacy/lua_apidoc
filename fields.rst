@@ -126,7 +126,7 @@ sess.sigma                         float        rw
 sess.oldmu                         float        rw
 sess.oldsigma                      float        rw
 sess.uci                           int          rw
-sess.aWeaponStats                  weaponstat   rw
+sess.aWeaponStats                  weaponstat   ro
 =================================  ===========  ========  ==================================
 
 .. note:: All the session `sess.*` fields will return `nil` unless the entity is associated with a client slot.
