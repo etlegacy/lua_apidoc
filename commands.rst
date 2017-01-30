@@ -10,9 +10,15 @@ Server commands
 
 
 lua_status
------------
+----------
 
 Lists all currently loaded Lua modules.
+
+
+lua_restart
+-----------
+
+Reinitialises all currently loaded Lua modules.
 
 
 lua_api
