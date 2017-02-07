@@ -23,7 +23,6 @@ lasthurt_time                      int          ro
 respawnTime                        int          ro
 inactivityTime                     int          rw
 inactivityWarning                  int          rw
-PCSpecialPickedUpCount             int          ro
 combatState                        int          ro
 deathAnimTime                      int          ro
 deathTime                          int          ro
