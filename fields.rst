@@ -117,13 +117,13 @@ sess.damage_given                  int          rw
 sess.damage_received               int          rw
 sess.team_damage_given             int          rw
 sess.team_damage_received          int          rw
-sess.time_axis                     int          rw
-sess.time_allies                   int          rw
-sess.time_played                   int          rw
-sess.mu                            float        rw
-sess.sigma                         float        rw
-sess.oldmu                         float        rw
-sess.oldsigma                      float        rw
+sess.time_axis                     int          ro
+sess.time_allies                   int          ro
+sess.time_played                   int          ro
+sess.mu                            float        ro
+sess.sigma                         float        ro
+sess.oldmu                         float        ro
+sess.oldsigma                      float        ro
 sess.uci                           int          rw
 sess.aWeaponStats                  weaponstat   ro
 =================================  ===========  ========  ==================================
