@@ -163,7 +163,8 @@ et.WP_MOBILE_BROWNING_SET      50                  Deployed Mobile Browning
 et.WP_MORTAR2                  51                  Axis Mortar
 et.WP_MORTAR2_SET              52                  Axis Deployed Mortar
 et.WP_BAZOOKA                  53                  Bazooka
-et.WP_NUM_WEAPONS              54                  Number of weapons
+et.WP_MP34                     54                  MP34
+et.WP_NUM_WEAPONS              55                  Number of weapons
 =============================  ==================  ==================================
 
 
@@ -240,7 +241,8 @@ et.MOD_MOBILE_BROWNING                     62
 et.MOD_MORTAR2                             63
 et.MOD_BAZOOKA                             64
 et.MOD_BACKSTAB                            65
-et.MOD_NUM_MODS                            66
+et.MOD_MP34                                66
+et.MOD_NUM_MODS                            67
 =========================================  ==================
 
 
