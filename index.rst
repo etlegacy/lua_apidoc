@@ -21,7 +21,7 @@ For example, if a player dies the `et_Obituary( victim, killer, meansOfDeath ) <
 
 
 Implementation
-==============
+--------------
 
 Legacy's Lua API follows mostly the `ETPub <http://www.etpub.org/>`_ implementation with partial code of the NoQuarter implemention. The ETPub implementation being built to be compatible with `ETPro's Lua <http://wolfwiki.anime.net/index.php/Lua_Mod_API>`_, all scripts written in ETPro's documentation should be valid and more or less compatible with Legacy mod's Lua API.
 
@@ -29,7 +29,7 @@ Legacy's Lua API follows mostly the `ETPub <http://www.etpub.org/>`_ implementat
 
 
 Contents
-========
+--------
 
 .. toctree::
    :maxdepth: 2
