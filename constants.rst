@@ -246,6 +246,29 @@ et.MOD_NUM_MODS                            67
 =========================================  ==================
 
 
+PW constants
+============
+
+
+===================  ==================  ======================
+Name                 Value               Description
+===================  ==================  ======================
+et.PW_NONE           0                   No powerup (unused)
+et.PW_INVULNERABLE   1                   Has spawn shield
+et.PW_NOFATIGUE      4                   Can sprint
+et.PW_REDFLAG        5                   Holds Axis objective
+et.PW_BLUEFLAG       6                   Holds Allied objective
+et.PW_OPS_DISGUISED  7                   Is disguised
+et.PW_OPS_CLASS_1    8                   Disguised class helper
+et.PW_OPS_CLASS_2    9                   Disguised class helper
+et.PW_OPS_CLASS_3    10                  Disguised class helper
+et.PW_ADRENALINE     11                  Has adrenaline
+et.PW_BLACKOUT       14                  Spec blackout
+et.PW_MVCLIENTLIST   15                  Static MV client info
+et.PW_NUM_POWERUPS   16                  Number of powerups
+===================  ==================  ======================
+
+
 SAY constants
 =============
 
