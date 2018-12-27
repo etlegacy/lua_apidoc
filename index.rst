@@ -23,7 +23,7 @@ For example, if a player dies the `et_Obituary( victim, killer, meansOfDeath ) <
 Implementation
 ==============
 
-Legacy's Lua API follows mostly the `ETPub <http://www.etpub.org/>`_ implementation with partial code of the `NoQuarter <http://shitstorm.org/noquarter/>`_ implemention. The ETPub implementation being built to be compatible with `ETPro's Lua <http://wolfwiki.anime.net/index.php/Lua_Mod_API>`_, all scripts written in ETPro's documentation should be valid and more or less compatible with Legacy mod's Lua API.
+Legacy's Lua API follows mostly the `ETPub <http://www.etpub.org/>`_ implementation with partial code of the NoQuarter implemention. The ETPub implementation being built to be compatible with `ETPro's Lua <http://wolfwiki.anime.net/index.php/Lua_Mod_API>`_, all scripts written in ETPro's documentation should be valid and more or less compatible with Legacy mod's Lua API.
 
 .. important:: As Legacy uses the newer Lua 5.3, you might want to check the **Incompatibilities with the Previous Version** sections of the `Lua 5.1 <https://www.lua.org/manual/5.1/manual.html#7>`_, `Lua 5.2 <https://www.lua.org/manual/5.2/manual.html#8>`_, and `Lua 5.3 <https://www.lua.org/manual/5.3/manual.html#8>`_ manuals while porting scripts written for other mods.
 
