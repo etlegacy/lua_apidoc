@@ -62,9 +62,7 @@ The sourcename may vary according to each driver. SQLite3 uses a simple database
 
 .. Some use a simple database name, like PostgreSQL, MySQL and SQLite; the ODBC driver expects the name of the DSN; the Oracle driver expects the service name; See also: PostgreSQL, and MySQL extensions.
 
-    -- database path
     local dbpath = string.gsub(et.trap_Cvar_Get("fs_homepath"), "\\", "/").."/"..et.trap_Cvar_Get("fs_game").."/"
-    -- connection
     conn = assert(env:connect(dbpath .. "etl.db"))
 
 Returns a `connection object <database.html#connection-objects>`__.
@@ -194,7 +192,7 @@ Besides the basic functionality provided by all drivers, the SQLite3 driver also
 env:connect(sourcename[,locktimeout])
 -------------------------------------
 
-In the SQLite3 driver, this method adds an optional parameter that indicate the amount of milisseconds to wait for a write lock if one cannot be obtained immediately. See also `environment objects <database.html#environment-objects>`__.
+In the SQLite3 driver, this method adds an optional parameter that indicate the amount of milliseconds to wait for a write lock if one cannot be obtained immediately. See also `environment objects <database.html#environment-objects>`__.
 
 Returns a `connection object <database.html#connection-objects>`__.
 
