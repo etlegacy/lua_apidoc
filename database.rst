@@ -58,12 +58,14 @@ env:connect(sourcename[,username[,password]])
 ---------------------------------------------
 
 Connects to a data source specified in sourcename using username and password if they are supplied.
-The sourcename may vary according to each driver. SQLite3 uses a simple database name.
+The sourcename may vary according to each driver. SQLite3 uses a simple database name::
+
+    -- get database path
+    local dbpath = string.gsub(et.trap_Cvar_Get("fs_homepath"), "\\", "/").."/"..et.trap_Cvar_Get("fs_game").."/"
+    -- connection
+    conn = assert(env:connect(dbpath .. "etl.db"))
 
 .. Some use a simple database name, like PostgreSQL, MySQL and SQLite; the ODBC driver expects the name of the DSN; the Oracle driver expects the service name; See also: PostgreSQL, and MySQL extensions.
-
-    local dbpath = string.gsub(et.trap_Cvar_Get("fs_homepath"), "\\", "/").."/"..et.trap_Cvar_Get("fs_game").."/"
-    conn = assert(env:connect(dbpath .. "etl.db"))
 
 Returns a `connection object <database.html#connection-objects>`__.
 
