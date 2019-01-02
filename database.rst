@@ -6,17 +6,6 @@ Both the Legacy mod and the ET:Legacy engine are built-in with `SQLite3 <https:/
 
 .. tip:: See the `Database <sample.html#database>`__ sample code for an example of basic database usage.
 
-If desired, Lua scripts can also connect to the engine memory database by the following Lua command::
-
-    --[[
-    Lua Example connecting to engine database
-    --]]
-    con = assert (env:connect( "file::memory:?cache=shared"))
-
-.. Note:: The database is only active when the `db_mode <https://dev.etlegacy.com/projects/etlegacy/wiki/List_of_Cvars#db_-Additional>`_ cvar is set.
-
-To save this in memory database to disk use the **saveDB** console command. See also the `db_url <https://dev.etlegacy.com/projects/etlegacy/wiki/List_of_Cvars#db_-Additional>`_ cvar to specify the database path.
-
 
 Error handling
 ==============
@@ -73,7 +62,20 @@ The sourcename may vary according to each driver. SQLite3 uses a simple database
 
 .. Some use a simple database name, like PostgreSQL, MySQL and SQLite; the ODBC driver expects the name of the DSN; the Oracle driver expects the service name; See also: PostgreSQL, and MySQL extensions.
 
+    -- database path
+    local dbpath = string.gsub(et.trap_Cvar_Get("fs_homepath"), "\\", "/").."/"..et.trap_Cvar_Get("fs_game").."/"
+    -- connection
+    conn = assert(env:connect(dbpath .. "etl.db"))
+
 Returns a `connection object <database.html#connection-objects>`__.
+
+If desired, Lua scripts can also connect to the engine memory database by the following Lua command::
+
+    conn = assert(env:connect("file::memory:?cache=shared"))
+
+.. Note:: The database is only active when the `db_mode <https://dev.etlegacy.com/projects/etlegacy/wiki/List_of_Cvars#db_-Additional>`_ cvar is set.
+
+To save this in memory database to disk use the **saveDB** console command. See also the `db_url <https://dev.etlegacy.com/projects/etlegacy/wiki/List_of_Cvars#db_-Additional>`_ cvar to specify the database path.
 
 
 Connection objects
