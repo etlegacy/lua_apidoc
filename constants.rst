@@ -102,6 +102,56 @@ et.MAX_MOTDLINES               6
 =============================  ==================
 
 
+GS constants
+============
+
+
+==========================  ==================  =========================================================
+Name                        Value               Description
+==========================  ==================  =========================================================
+et.GS_INITIALIZE            -1                  Map changing/loading
+et.GS_PLAYING               0                   Game is running
+et.GS_WARMUP_COUNTDOWN      1                   Warmup countdown is active
+et.GS_WARMUP                2                   Warmup active (waiting for players to ready themselves)
+et.GS_INTERMISSION          3                   Intermission screen is shown to players
+et.GS_WAITING_FOR_PLAYERS   4                   Unused?
+et.GS_RESET                 5                   Used to reset match instead of restarting map
+==========================  ==================  =========================================================
+
+
+TEAM constants
+============
+
+
+==================  ==================  =========================================================
+Name                Value               Description
+==================  ==================  =========================================================
+et.TEAM_FREE        0                   Unassigned
+et.TEAM_AXIS        1                   Axis
+et.TEAM_ALLIES      2                   Allies
+et.TEAM_SPECTATOR   3                   Spectators
+et.TEAM_NUM_TEAMS   4                   Number of teams
+==================  ==================  =========================================================
+
+
+SK constants
+============
+
+
+==============================================  ==================  =========================================================
+Name                                            Value               Description
+==============================================  ==================  =========================================================
+et.SK_BATTLE_SENSE                              0                   Unassigned
+et.SK_EXPLOSIVES_AND_CONSTRUCTION               1                   Engineering
+et.SK_FIRST_AID                                 2                   First Aid
+et.SK_SIGNALS                                   3                   Signals
+et.SK_LIGHT_WEAPONS                             4                   Light Weapons
+et.SK_HEAVY_WEAPONS                             1                   Heavy Weapons
+et.SK_MILITARY_INTELLIGENCE_AND_SCOPED_WEAPONS  2                   Covert Ops
+et.SK_NUM_SKILLS                                3                   Number of skills
+==============================================  ==================  =========================================================
+
+
 WP constants
 ============
 
