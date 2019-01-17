@@ -141,7 +141,7 @@ Send a team voice chat on behalf of the specified client::
 
 Send a fireteam voice chat on behalf of the specified client::
 
-    "vtchat VoiceOnly ClientNum 50 Fireteam-String X-Location Y-Location Z-Location Vsay-Number \"Custom-Message\""
+    "vbchat VoiceOnly ClientNum 50 Fireteam-String X-Location Y-Location Z-Location Vsay-Number \"Custom-Message\""
 
 * **VoiceOnly** prints a fireteam chat message on behalf of ClientNum if set to **0**, or only play the sound if set to **1**.
 * **Fireteam-String** is the fireteam voice chat message.
