@@ -80,6 +80,8 @@ ps.persistant                      int_array    rw
 ps.ping                            int          ro
 ps.powerups                        int_array    rw
 ps.origin                          vec3         rw
+ps.viewangles                      vec3         rw
+ps.velocity                        vec3         rw
 ps.ammo                            int_array    rw
 ps.ammoclip                        int_array    rw
 ps.classWeaponTime                 int          rw
