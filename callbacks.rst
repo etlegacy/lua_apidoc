@@ -186,6 +186,15 @@ Called whenever a player gets damage.
 * **meansOfDeath** is the means of death. See `et.MOD_* constants <constants.html#mod-constants>`__ for possible values.
 
 
+et_WeaponFire( clientNum, weapon )
+----------------------------------
+
+Called whenever a weapon is shot.
+
+* **clientNum** is the client slot.
+* **weapon** is the weapon shot.
+
+
 et_SpawnEntitiesFromString()
 ----------------------------
 

@@ -652,10 +652,10 @@ et.trap_Trace( start, mins, maxs, end, entNum, mask )
 Traces an entity.
 
 * **start** is the starting position.
-* **mins** is the minimum length.
-* **maxs** is the maximum length.
+* **mins** is the minimum point of the bounding box.
+* **maxs** is the maximum point of the bounding box.
 * **ends** is the ending position.
-* **entNum** is the entity number that is traced.
+* **entNum** is the entity number that is being ignored by the trace function.
 * **mask** is the content mask.
 
 
@@ -666,10 +666,10 @@ Runs a trace with players in historical positions.
 
 * **ent** is the entity which trace history is handled.
 * **start** is the starting position.
-* **mins** is the minimum length.
-* **maxs** is the maximum length.
+* **mins** is the minimum point of the bounding box.
+* **maxs** is the maximum point of the bounding box.
 * **ends** is the ending position.
-* **entNum** is the entity number that is traced.
+* **entNum** is the entity number that is being ignored by the trace function.
 * **mask** is the content mask.
 
 
