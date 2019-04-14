@@ -120,7 +120,7 @@ et.GS_RESET                 5                   Used to reset match instead of r
 
 
 TEAM constants
-============
+==============
 
 
 ==================  ==================  =========================================================
@@ -332,6 +332,102 @@ et.SAY_TEAM        1                   Message will be sent to the client's team
 et.SAY_BUDDY       2                   Message will be sent to the client's fireteam.
 et.SAY_TEAMNL      3                   Message will be sent to the client's team, without location.
 =================  ==================  ==================
+
+
+CONTENTS constants
+==================
+
+
+============================  ==========  ==================
+Name                          Value       Description
+============================  ==========  ==================
+et.CONTENTS_NONE              0x00000000
+et.CONTENTS_SOLID             0x00000001
+et.CONTENTS_LIGHTGRID         0x00000004
+et.CONTENTS_LAVA              0x00000008
+et.CONTENTS_SLIME             0x00000010
+et.CONTENTS_WATER             0x00000020
+et.CONTENTS_FOG               0x00000040
+et.CONTENTS_MISSILECLIP       0x00000080
+et.CONTENTS_ITEM              0x00000100
+et.CONTENTS_MOVER             0x00004000
+et.CONTENTS_AREAPORTAL        0x00008000
+et.CONTENTS_PLAYERCLIP        0x00010000
+et.CONTENTS_MONSTERCLIP       0x00020000
+et.CONTENTS_TELEPORTER        0x00040000
+et.CONTENTS_JUMPPAD           0x00080000
+et.CONTENTS_CLUSTERPORTAL     0x00100000
+et.CONTENTS_DONOTENTER        0x00200000  Unused
+et.CONTENTS_DONOTENTER_LARGE  0x00400000  Unused
+et.CONTENTS_ORIGIN            0x01000000
+et.CONTENTS_BODY              0x02000000
+et.CONTENTS_CORPSE            0x04000000
+et.CONTENTS_DETAIL            0x08000000
+et.CONTENTS_STRUCTURAL        0x10000000
+et.CONTENTS_TRANSLUCENT       0x20000000
+et.CONTENTS_TRIGGER           0x40000000
+et.CONTENTS_NODROP            0x80000000
+============================  ==========  ==================
+
+
+SURF constants
+==============
+
+
+====================  ==========  ==================
+Name                  Value       Description
+====================  ==========  ==================
+et.SURF_NODAMAGE      0x00000001
+et.SURF_SLICK         0x00000002
+et.SURF_SKY           0x00000004
+et.SURF_LADDER        0x00000008
+et.SURF_NOIMPACT      0x00000010
+et.SURF_NOMARKS       0x00000020
+et.SURF_SPLASH        0x00000040
+et.SURF_NODRAW        0x00000080
+et.SURF_HINT          0x00000100
+et.SURF_SKIP          0x00000200
+et.SURF_NOLIGHTMAP    0x00000400
+et.SURF_POINTLIGHT    0x00000800
+et.SURF_METAL         0x00001000
+et.SURF_NOSTEPS       0x00002000
+et.SURF_NONSOLID      0x00004000
+et.SURF_LIGHTFILTER   0x00008000
+et.SURF_ALPHASHADOW   0x00010000
+et.SURF_NODLIGHT      0x00020000
+et.SURF_WOOD          0x00040000
+et.SURF_GRASS         0x00080000
+et.SURF_CERAMIC                   Unused
+et.SURF_GRAVEL        0x00100000
+et.SURF_GLASS         0x00200000
+et.SURF_SNOW          0x00400000
+et.SURF_ROOF          0x00800000
+et.SURF_RUBBLE        0x01000000
+et.SURF_CARPET        0x02000000
+et.SURF_MONSTERSLICK  0x04000000
+et.SURF_MONSLICK_W    0x08000000
+et.SURF_MONSLICK_N    0x10000000
+et.SURF_MONSLICK_E    0x20000000
+et.SURF_MONSLICK_S    0x40000000
+et.SURF_LANDMINE      0x80000000
+====================  ==========  ==================
+
+
+MASK constants
+==============
+
+
+===================  ======================================================  ======================
+Name                 Value                                                   Description
+===================  ======================================================  ======================
+et.MASK_ALL          (-1)
+et.MASK_SOLID        (CONTENTS_SOLID)
+et.MASK_PLAYERSOLID  (CONTENTS_SOLID | CONTENTS_PLAYERCLIP | CONTENTS_BODY)
+et.MASK_WATER        (CONTENTS_WATER | CONTENTS_LAVA | CONTENTS_SLIME)
+et.MASK_OPAQUE       (CONTENTS_SOLID | CONTENTS_LAVA)
+et.MASK_SHOT         (CONTENTS_SOLID | CONTENTS_BODY | CONTENTS_CORPSE)
+et.MASK_MISSILESHOT  (MASK_SHOT | CONTENTS_MISSILECLIP)
+===================  ======================================================  ======================
 
 
 EXEC constants
