@@ -334,6 +334,42 @@ et.SAY_TEAMNL      3                   Message will be sent to the client's team
 =================  ==================  ==================
 
 
+PM constants
+============
+
+
+==================  ==========  ==================
+Name                Value       Description
+==================  ==========  ==================
+et.PM_NORMAL        0           Can accelerate and turn
+et.PM_NOCLIP        1           Noclip movement
+et.PM_SPECTATOR     2           Still run into walls
+et.PM_DEAD          3           No acceleration or turning, but free falling
+et.PM_FREEZE        4           Stuck in place with no control
+et.PM_INTERMISSION  5           No movement or status bar
+==================  ==========  ==================
+
+
+STATS constants
+===============
+
+
+======================  ==========  ==================
+Name                    Value       Description
+======================  ==========  ==================
+et.STAT_HEALTH          0           Health
+et.STAT_KEYS            1           16 bit fields (only used for binoculars)
+et.STAT_DEAD_YAW        2           Look this direction when dead
+et.STAT_MAX_HEALTH      3           Health/armor limit
+et.STAT_PLAYER_CLASS    4           Player class in multiplayer
+et.STAT_XP              5           XP (realtime version, doesn't need to go through scoreboard)
+et.STAT_PS_FLAGS        6           Player state flags (used for leaning status)
+et.STAT_AIRLEFT         7           Airtime
+et.STAT_SPRINTTIME      8           Sprinttime
+et.STAT_ANTIWARP_DELAY  9           Extra lag on the lagometer to reflect warp status
+======================  ==========  ==================
+
+
 CONTENTS constants
 ==================
 
