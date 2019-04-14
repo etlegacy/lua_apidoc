@@ -61,7 +61,7 @@ pers.lastkilled_client             int          ro
 pers.lastrevive_client             int          ro
 pers.lastkiller_client             int          ro
 pers.lastammo_client               int          ro
-pers.lasthealth_client             int          ro
+pers.lasthealth_client             int          rw
 pers.lastteambleed_client          int          ro
 pers.lastteambleed_dmg             int          ro
 pers.playerStats.hitRegions        int_array    ro
@@ -72,6 +72,7 @@ pers.playerStats.selfkills         int          ro
 
 ps.pm_flags                        int          ro
 ps.pm_time                         int          ro
+ps.pm_type                         int          ro
 ps.eFlags                          int          ro
 ps.weapon                          int          ro
 ps.weaponstate                     int          ro
@@ -85,6 +86,8 @@ ps.velocity                        vec3         rw
 ps.ammo                            int_array    rw
 ps.ammoclip                        int_array    rw
 ps.classWeaponTime                 int          rw
+ps.viewheight                      int          ro
+ps.leanf                           float        ro
 
 sess.sessionTeam                   int          rw
 sess.spectatorTime                 int          rw
