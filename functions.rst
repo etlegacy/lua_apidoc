@@ -520,6 +520,14 @@ Removes a weapon from a client.
 .. note:: Removing a weapon also removes its associated alternate weapon.
 
 
+et.GetCurrentWeapon( clientNum )
+----------------------------------------------
+
+Return weapon, ammo, ammoclip from a client.
+
+* **clientNum** is the slot number of the client.
+
+
 Entities
 ========
 
@@ -638,12 +646,39 @@ Sets a value in an entity.
 * **arrayindex**, if present, specifies which element of an array entity field to set.
 
 
+et.trap_Trace( start, mins, maxs, end, entNum, mask )
+-----------------------------------------------------
+
+Traces an entity.
+
+* **start** is the starting position.
+* **mins** is the minimum length.
+* **maxs** is the maximum length.
+* **ends** is the ending position.
+* **entNum** is the entity number that is traced.
+* **mask** is the content mask.
+
+
+et.G_HistoricalTrace( ent, start, mins, maxs, end, entNum, mask )
+-----------------------------------------------------------------
+
+Runs a trace with players in historical positions.
+
+* **ent** is the entity which trace history is handled.
+* **start** is the starting position.
+* **mins** is the minimum length.
+* **maxs** is the maximum length.
+* **ends** is the ending position.
+* **entNum** is the entity number that is traced.
+* **mask** is the content mask.
+
+
 et.G_AddEvent( ent, event, eventparm )
 --------------------------------------
 
 Adds an event to the entity event sequence.
 
-* **ent** is the entity which event sequnce is handled.
+* **ent** is the entity which event sequence is handled.
 * **event** is the event to add.
 * **eventparm** is optional parameter for the event.
 
