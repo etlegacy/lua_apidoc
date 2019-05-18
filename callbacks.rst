@@ -195,6 +195,30 @@ Called whenever a weapon is shot.
 * **weapon** is the weapon shot.
 
 
+et_WeaponFixedMGFire( clientNum )
+---------------------------------
+
+Called whenever a fixed machine gun is shot.
+
+* **clientNum** is the client slot.
+
+
+et_WeaponMountedMGFire( clientNum )
+-----------------------------------
+
+Called whenever a mounted machine gun is shot.
+
+* **clientNum** is the client slot.
+
+
+et_WeaponAAGunFire( clientNum )
+-------------------------------
+
+Called whenever an anti-aircraft gun is shot.
+
+* **clientNum** is the client slot.
+
+
 et_SpawnEntitiesFromString()
 ----------------------------
 
