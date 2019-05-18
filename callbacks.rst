@@ -194,6 +194,8 @@ Called whenever a weapon is shot.
 * **clientNum** is the client slot.
 * **weapon** is the weapon shot.
 
+Returns 1 to override (abort) the qagame function, 0 to "passthrough". Callback may do anything it wants during passthrough.
+
 
 et_FixedMGFire( clientNum )
 ---------------------------------
@@ -201,6 +203,8 @@ et_FixedMGFire( clientNum )
 Called whenever a fixed machine gun is shot.
 
 * **clientNum** is the client slot.
+
+Returns 1 to override (abort) the qagame function, 0 to "passthrough". Callback may do anything it wants during passthrough.
 
 
 et_MountedMGFire( clientNum )
@@ -210,6 +214,8 @@ Called whenever a mounted machine gun is shot.
 
 * **clientNum** is the client slot.
 
+Returns 1 to override (abort) the qagame function, 0 to "passthrough". Callback may do anything it wants during passthrough.
+
 
 et_AAGunFire( clientNum )
 -------------------------------
@@ -217,6 +223,8 @@ et_AAGunFire( clientNum )
 Called whenever an anti-aircraft gun is shot.
 
 * **clientNum** is the client slot.
+
+Returns 1 to override (abort) the qagame function, 0 to "passthrough". Callback may do anything it wants during passthrough.
 
 
 et_SpawnEntitiesFromString()
