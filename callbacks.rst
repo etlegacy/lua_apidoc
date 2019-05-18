@@ -195,7 +195,7 @@ Called whenever a weapon is shot.
 * **weapon** is the weapon shot.
 
 
-et_WeaponFixedMGFire( clientNum )
+et_FixedMGFire( clientNum )
 ---------------------------------
 
 Called whenever a fixed machine gun is shot.
@@ -203,7 +203,7 @@ Called whenever a fixed machine gun is shot.
 * **clientNum** is the client slot.
 
 
-et_WeaponMountedMGFire( clientNum )
+et_MountedMGFire( clientNum )
 -----------------------------------
 
 Called whenever a mounted machine gun is shot.
@@ -211,7 +211,7 @@ Called whenever a mounted machine gun is shot.
 * **clientNum** is the client slot.
 
 
-et_WeaponAAGunFire( clientNum )
+et_AAGunFire( clientNum )
 -------------------------------
 
 Called whenever an anti-aircraft gun is shot.
