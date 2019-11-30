@@ -25,9 +25,10 @@ r    sess.rank                    Rank
 m    medalStr                     Medals
 s    skillStr                     Skills
 dn   disguiseClientNum            Disguised covert ops
-w    sess.playerWeapon            Weapon
+w    sess.playerWeapon            Primary weapon
 lw   sess.latchPlayerWeapon       Latched primary weapon
-sw   sess.latchPlayerWeapon2      Latched secondary weapon
+sw   sess.playerWeapon2           Secondary weapon
+lsw  sess.latchPlayerWeapon2      Latched secondary weapon
 mu   sess.muted                   Muted
 ref  sess.referee                 Referee
 u    sess.uci                     GeoIP `ISO 3166-1 <https://en.wikipedia.org/wiki/ISO_3166-1>`_ country code
