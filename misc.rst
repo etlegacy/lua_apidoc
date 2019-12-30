@@ -46,12 +46,13 @@ They can be accessed with the `Userinfo <functions.html#userinfo>`__ functions.
 =====================  ================================  ==================================================
 Key                    Example Value                     Description
 =====================  ================================  ==================================================
+cg_etVersion           Enemy Territory, ET 2.60b         ET client version
 cg_uinfo               12 0 100                          Client settings [cg_autoreload/cg_autoactivate/cg_predictitems] [cl_timenudge] [cl_maxpackets]
 cg_allowGeoIP          1                                 Geolocalisation setting
 g_password             none                              Server password
 cl_guid                0123456789ABCDEF0123456789ABCDEF  GUID
 cl_wwwDownload         1                                 Missing files downloading toggle
-name                   ETLPlayer                         Nickname
+name                   ETLegacyPlayer                    Nickname
 rate                   2500                              Rate setting
 snaps                  20                                Snaps setting
 protocol               84                                Game protocol
