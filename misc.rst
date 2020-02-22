@@ -38,10 +38,8 @@ u    sess.uci                     GeoIP `ISO 3166-1 <https://en.wikipedia.org/wi
 Userinfo
 ========
 
-
 Userinfo strings are strings set on clients for server processing.
 They can be accessed with the `Userinfo <functions.html#userinfo>`__ functions.
-
 
 =====================  ================================  ==================================================
 Key                    Example Value                     Description
@@ -55,13 +53,20 @@ cl_wwwDownload         1                                 Missing files downloadi
 name                   ETLegacyPlayer                    Nickname
 rate                   2500                              Rate setting
 snaps                  20                                Snaps setting
-protocol               84                                Game protocol
-qport                  4834                              Randomly chosen as startup
-challenge              -686256943                        Random 31 bit integer
 ip                     192.168.123.45:27960              IP and port
 =====================  ================================  ==================================================
 
 .. note:: The userinfo string of bots only includes the `cl_guid`, `name`, `rate`, `snap` and `ip` keys/values.
+
+The following keys/values pairs are strictly used for connection validation, and are then dropped from userinfo strings once connection is established.
+
+=====================  ================================  ==================================================
+Key                    Example Value                     Description
+=====================  ================================  ==================================================
+protocol               84                                Game protocol
+qport                  4834                              Randomly chosen as startup
+challenge              -686256943                        Random 31 bit integer
+=====================  ================================  ==================================================
 
 
 SendServerCommand
