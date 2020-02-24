@@ -87,13 +87,17 @@ Print a message to the client's console::
 
     "print \"Message\n\""
 
-Print a message to the client's annoucement area and console::
+Print a message to the client's top screen banner area::
 
-    "cpm \"Message\n\""
+    "bp \"Message\n\""
 
 Print a message to the center of the client's screen::
 
     "cp \"Message\n\""
+
+Print a message to the client's annoucement area and console::
+
+    "cpm \"Message\n\""
 
 Print a message to the client's console and writes it to the statsdump file::
 
