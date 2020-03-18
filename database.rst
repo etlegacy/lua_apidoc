@@ -2,7 +2,7 @@
 Database
 ========
 
-Both the Legacy mod and the ET:Legacy engine are built-in with `SQLite3 <https://www.sqlite.org/>`_ database support. The engine allows to execute SQL statement directly in console, while the Legacy mod has access through `LuaSQL <https://keplerproject.github.io/luasql/>`_.
+Both the Legacy mod and the ET: Legacy engine are built-in with `SQLite3 <https://www.sqlite.org/>`_ database support. The engine allows to execute SQL statement directly in console, while the Legacy mod has access through `LuaSQL <https://keplerproject.github.io/luasql/>`_.
 
 .. tip:: See the `Database <sample.html#database>`__ sample code for an example of basic database usage.
 

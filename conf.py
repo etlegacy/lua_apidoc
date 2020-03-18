@@ -53,8 +53,8 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'Legacy Lua API'
-copyright = '2012-2019, ET:Legacy Team'
-author = 'ET:Legacy Team'
+copyright = '2012-2020, ET: Legacy Team'
+author = 'ET: Legacy Team'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -137,7 +137,7 @@ html_theme = 'sphinx_rtd_theme'
 # The name for this set of Sphinx documents.
 # "<project> v<release> documentation" by default.
 #
-# html_title = 'Legacy Lua API v2.75'
+# html_title = 'Legacy Lua API v2.76'
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #
@@ -264,7 +264,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'LegacyLuaAPI.tex', 'Legacy Lua API Documentation',
-     'ET:Legacy Team', 'manual'),
+     'ET: Legacy Team', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
