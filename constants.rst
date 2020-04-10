@@ -156,19 +156,19 @@ WP constants
 ============
 
 
-=============================  ==================  ==================================
+=============================  ==================  ======================================
 Name                           Value               Description
-=============================  ==================  ==================================
+=============================  ==================  ======================================
 et.WP_NONE                     0                   No weapon
-et.WP_KNIFE                    1                   Axis Knife Dagger
+et.WP_KNIFE                    1                   Axis Dagger Knife
 et.WP_LUGER                    2                   Luger
 et.WP_MP40                     3                   MP40
-et.WP_GRENADE_LAUNCHER         4                   Axis Grenade
+et.WP_GRENADE_LAUNCHER         4                   Axis Hand Grenade
 et.WP_PANZERFAUST              5                   Panzerfaust
 et.WP_FLAMETHROWER             6                   Flamethrower
 et.WP_COLT                     7                   Colt 1911
 et.WP_THOMPSON                 8                   Thompson
-et.WP_GRENADE_PINEAPPLE        9                   Allies Grenade
+et.WP_GRENADE_PINEAPPLE        9                   Allies Hand Grenade
 et.WP_STEN                     10                  Sten
 et.WP_MEDIC_SYRINGE            11                  Syringe
 et.WP_AMMO                     12                  Ammo pack
@@ -183,8 +183,8 @@ et.WP_BINOCULARS               20                  Binoculars
 et.WP_PLIERS                   21                  Pliers
 et.WP_SMOKE_MARKER             22                  Airstrike Marker
 et.WP_KAR98                    23                  Kar98 (Axis Rifle)
-et.WP_CARBINE                  24                  M1 Garand
-et.WP_GARAND                   25                  Scoped M1 Garand
+et.WP_CARBINE                  24                  M1 Garand (Allies Rifle)
+et.WP_GARAND                   25                  Scoped M1 Garand (Allies Sniper Rifle)
 et.WP_LANDMINE                 26                  Landmine
 et.WP_SATCHEL                  27                  Satchel
 et.WP_SATCHEL_DET              28                  Satchel Detonator
@@ -201,7 +201,7 @@ et.WP_M7                       38                  M1 Garand (Grenade Loaded)
 et.WP_SILENCED_COLT            39                  Silenced Colt 1911
 et.WP_GARAND_SCOPE             40                  Scoped M1 Garand (Scoped Mode)
 et.WP_K43_SCOPE                41                  K43 (Scoped Mode)
-et.WP_FG42SCOPE                42                  FG42 (Scoped Mode)
+et.WP_FG42_SCOPE               42                  FG42 (Scoped Mode)
 et.WP_MORTAR_SET               43                  Allies Deployed Mortar
 et.WP_MEDIC_ADRENALINE         44                  Adrenaline
 et.WP_AKIMBO_SILENCEDCOLT      45                  Akimbo Silenced Colts 1911
@@ -216,7 +216,7 @@ et.WP_BAZOOKA                  53                  Bazooka
 et.WP_MP34                     54                  MP34
 et.WP_AIRSTRIKE                55                  Airstrike
 et.WP_NUM_WEAPONS              56                  Number of weapons
-=============================  ==================  ==================================
+=============================  ==================  ======================================
 
 
 MOD constants
