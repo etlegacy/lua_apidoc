@@ -73,9 +73,9 @@ If desired, Lua scripts can also connect to the engine memory database by the fo
 
     conn = assert(env:connect("file::memory:?cache=shared"))
 
-.. Note:: The database is only active when the `db_mode <https://dev.etlegacy.com/projects/etlegacy/wiki/List_of_Cvars#db_-Additional>`_ cvar is set.
+.. Note:: The database is only active when the *db_mode* cvar is set.
 
-To save this in memory database to disk use the **saveDB** console command. See also the `db_url <https://dev.etlegacy.com/projects/etlegacy/wiki/List_of_Cvars#db_-Additional>`_ cvar to specify the database path.
+To save this in memory database to disk use the **saveDB** console command. See also the *db_url* cvar to specify the database path.
 
 
 Connection objects

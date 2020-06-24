@@ -51,7 +51,7 @@ et.CS_INTERMISSION_START_TIME  36
 et.CS_ENDGAME_STATS            37
 et.CS_CHARGETIMES              38
 et.CS_FILTERCAMS               39
-et.CS_LEGACYINFO               40
+et.CS_MODINFO                  40
 et.CS_SVCVAR                   41
 et.CS_CONFIGNAME               42
 et.CS_TEAMRESTRICTIONS         43

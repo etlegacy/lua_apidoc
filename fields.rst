@@ -289,7 +289,7 @@ vec3
 ----
 
 A vec3_t is a 3-element array of numbers, usually used to store and process coordinates in 3D space.
-Similarly, in Legacy a vector is an array (table indexed by integers) containing 3 numbers. It can be accessed by::
+Similarly, a vector is an array (table indexed by integers) containing 3 numbers. It can be accessed by::
 
     origin = et.gentity_get(entNum, "r.currentOrigin") --a vec3 value
     x, y, z = origin[1], origin[2], origin[3]
