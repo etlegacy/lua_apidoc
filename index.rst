@@ -10,7 +10,7 @@ Welcome to the Legacy Lua API's documentation!
 
 The **Legacy mod** is the default mod shipped with `ET: Legacy <http://www.etlegacy.com>`_. It supports server-side modifications via the `Lua <http://www.lua.org/>`_ scripting language, with the Legacy Lua API being the interface for communication between them.
 
-The embedded **Lua 5.3** interpreter will load user-defined scripts if present in the `legacy` directory. The Lua API provides an "et" library of `function calls <functions.html>`__ that allow access to the server engine, and also provides `callbacks <callbacks.html>`__ so a server side mod may trigger on specific server events.
+The embedded **Lua 5.4** interpreter will load user-defined scripts if present in the `legacy` directory. The Lua API provides an "et" library of `function calls <functions.html>`__ that allow access to the server engine, and also provides `callbacks <callbacks.html>`__ so a server side mod may trigger on specific server events.
 
 In some cases values can be returned to Legacy mod, whenever something is intercepted (i.e. a command) and prevented to be further handled. This way, new commands can easily be defined or existing ones can be altered.
 
@@ -21,7 +21,7 @@ For example, if a player dies the `et_Obituary( victim, killer, meansOfDeath ) <
 
 Legacy's Lua API follows mostly the `ETPub <http://www.etpub.org/>`_ implementation with partial code of the NoQuarter implemention. The ETPub implementation being built to be compatible with `ETPro's Lua <http://wolfwiki.anime.net/index.php/Lua_Mod_API>`_, all scripts written in ETPro's documentation should be valid and more or less compatible with Legacy mod's Lua API.
 
-.. important:: As Legacy uses the newer Lua 5.3, you might want to check the **Incompatibilities with the Previous Version** sections of the `Lua 5.1 <https://www.lua.org/manual/5.1/manual.html#7>`_, `Lua 5.2 <https://www.lua.org/manual/5.2/manual.html#8>`_, and `Lua 5.3 <https://www.lua.org/manual/5.3/manual.html#8>`_ manuals while porting scripts written for other mods.
+.. important:: As Legacy uses the newer Lua 5.4, you might want to check the **Incompatibilities with the Previous Version** sections of the `Lua 5.1 <https://www.lua.org/manual/5.1/manual.html#7>`_, `Lua 5.2 <https://www.lua.org/manual/5.2/manual.html#8>`_, `Lua 5.3 <https://www.lua.org/manual/5.3/manual.html#8>`_, and `Lua 5.4 <https://www.lua.org/manual/5.4/manual.html#8>`_ manuals while porting scripts written for other mods.
 
 .. toctree::
    :maxdepth: 2

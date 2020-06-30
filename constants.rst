@@ -518,5 +518,5 @@ LUA_PATH           ./legacy/?.lua;                       Ease use of the require
 LUA_CPATH          ./legacy/lualibs/?.so;                Ease use of the require function
                    fs_homepath/legacy/lualibs/?.so       to load libraries
 LUA_DIRSEP         /                                     Directory separator
-_VERSION           Lua 5.3                               Lua version
+_VERSION           Lua 5.4                               Lua version
 =================  ====================================  ==================
