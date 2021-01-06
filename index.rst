@@ -6,9 +6,11 @@
 Legacy Lua API
 ==============
 
-.. warning:: **DO NOT TRUST STRINGS OBTAINED IN THIS WAY!**
+
+.. warning:: **THIS DOCUMENTATION IS NOW DEPRECATED!**
 
              For the latest documentation, please refer to `etlegacy.rtfd.io <http://etlegacy.rtfd.io>`_.
+
 
 Welcome to the Legacy Lua API's documentation!
 
