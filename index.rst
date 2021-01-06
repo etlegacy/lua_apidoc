@@ -10,7 +10,7 @@ Welcome to the Legacy Lua API's documentation!
 
 .. warning:: **THIS DOCUMENTATION IS NOW DEPRECATED!**
 
-             For the latest documentation, please refer to `etlegacy.rtfd.io <http://etlegacy.rtfd.io>`_.
+             For the latest documentation, please refer to `etlegacy-lua-docs.rtfd.io <http://etlegacy-lua-docs.rtfd.io>`_.
 
 The **Legacy mod** is the default mod shipped with `ET: Legacy <http://www.etlegacy.com>`_. It supports server-side modifications via the `Lua <http://www.lua.org/>`_ scripting language, with the Legacy Lua API being the interface for communication between them.
 
